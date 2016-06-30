@@ -7,10 +7,12 @@ This service checks the param to see whether that string contains a unix timesta
 ##Example usage:
 
 https://timestamp-agbales.c9users.io/December%2015,%202015
+
 https://timestamp-agbales.c9users.io/Dec%15%15
+
 https://timestamp-agbales.c9users.io/1450137600
 
-Example output:
+Each example will output:
 
 { "unix": 1450137600, "natural": "December 15, 2015" }
 
