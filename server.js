@@ -1,15 +1,10 @@
-'use strict';
-
 var express = require('express');
-var routes = require('./app/routes/index.js');
-var mongoose = require('mongoose');
-var passport = require('passport');
-var session = require('express-session');
 var moment = require('moment');
-
+var path = require('path');
 var app = express();
 
 var port = process.env.PORT || 8080;
+
 app.listen(port,  function () {
 	console.log('Node.js listening on port ' + port + '...');
 	process.on('uncaughtException', function (err) {
@@ -17,18 +12,22 @@ app.listen(port,  function () {
 	}); 
 });
 
+app.get('/', function(req, res){
+    res.sendFile(path.join(__dirname+'/public/index.html'));
+})
+
 app.get('/:query', function(req, res) {
 	var date = req.params.query;
 	var u,
 		n
-	
+
 	// If unix, else make unix & format text
 	if (date == parseInt(date)) {
-		u = parseInt(date)
-		n = moment.unix(date).format('MMMM DD, YYYY')
+		u = parseInt(date);
+		n = moment.unix(date).format('MMMM DD, YYYY');
 	} else {
-		u = moment(date).unix()
-		n = moment(date).format('MMMM DD, YYYY')
+		u = moment(date).unix();
+		n = moment(date).format('MMMM DD, YYYY');
 	}
 	
 	// If Unix not integer, failure. Return null.
@@ -42,6 +41,5 @@ app.get('/:query', function(req, res) {
 		natural : n
 	};
 	
-	console.log(JSON.stringify(obj));
 	res.send(JSON.stringify(obj));
 });

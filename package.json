@@ -7,17 +7,12 @@
     "type": "git",
     "url": "https://github.com/agbales/timestamp-microservice"
   },
-  "homepage": "https://backend-agbales.c9users.io/",
+  "homepage": "https://agbales-timestamp-microservice.herokuapp.com/",
   "bugs": "",
   "keywords": [
     "timestamp",
-    "MongoDB",
-    "Mongoose",
-    "full stack",
     "Express",
-    "Node",
-    "javascript",
-    "boilerplate"
+    "Node"
   ],
   "scripts": {
   "start": "node server.js"
@@ -25,12 +20,7 @@
   "author": "Andrew Bales",
   "license": "MIT",
   "dependencies": {
-    "dotenv": "^1.2.0",
     "express": "^4.12.4",
-    "express-session": "^1.11.3",
-    "mongoose": "^4.1.0",
-    "passport": "^0.3.0",
-    "passport-github": "^1.0.0",
     "moment": "2.13.0"
   }
 }
