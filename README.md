@@ -1,6 +1,6 @@
 # Timestamp Microservice
 
-## Usage
+## Purpose
 
 This service checks the param to see whether that string contains a unix timestamp or distinguishable natural language date (ex: January 1, 2016 OR Jan 1 16). If so, it returns both the Unix and natural language forms. Otherwise, it returns null for both properties.
 
