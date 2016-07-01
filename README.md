@@ -18,9 +18,8 @@ Each example will output:
 
 { "unix": 1450137600, "natural": "December 15, 2015" }
 
-## Info
+## Build Info
 
-Built with:  
 [Node.js](https://nodejs.org/en/)  
 [Express.js](http://expressjs.com/)  
 [Moment.js](https://github.com/moment/moment/) for time formatting.
