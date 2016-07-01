@@ -18,12 +18,8 @@ Each example will output:
 
 { "unix": 1450137600, "natural": "December 15, 2015" }
 
-## Build Info
+## Info
 
-Built with the [FCC version of Clementine.js](http://www.clementinejs.com/versions/fcc.html#c9.ioSetup), a lightweight boilerplate for fullstack JavaScript development which utilizes MongoDB, Express and Node.js.
-
-[Moment.js](https://github.com/moment/moment/) provides time formatting.
-
-## License
-
-MIT License. [Click here for more information.](LICENSE.md)
+[Node.js](https://nodejs.org/en/)
+[Express.js](http://expressjs.com/)
+[Moment.js](https://github.com/moment/moment/) for time formatting.
