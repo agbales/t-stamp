@@ -20,8 +20,7 @@ Each example will output:
 
 ## Info
 
-[Node.js](https://nodejs.org/en/)
-
-[Express.js](http://expressjs.com/)
-
+Built with:  
+[Node.js](https://nodejs.org/en/)  
+[Express.js](http://expressjs.com/)  
 [Moment.js](https://github.com/moment/moment/) for time formatting.
